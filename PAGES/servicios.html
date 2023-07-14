@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="icon" type="img/x-icon" href="../IMG/logo.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Asesorías</title>
+</head>
+
+<body>
+
+    <div class="container">
+        
+            <header id="header" class="col-12">
+
+                <div id="logotipo">
+                    <img src="../IMG/logo.jpg" alt="Logotipo de la web">
+                </div>
+
+                <h1>
+                    <a href="../index.html">ASESORIAS ONLINE</a>
+                </h1>
+                <nav class="navbar navbar-expand-lg bg-dark w-100" data-bs-theme="dark">
+                    <div class="container-fluid">
+                        <a id="navitem" class="navbar-brand" href="../index.html">Inicio</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li id="navitem" class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="./nosotros.html">Nosotros</a>
+                                </li>
+                                <li id="navitem" class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="./servicios.html" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Servicios
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Asesorías</a></li>
+                                        <li><a class="dropdown-item" href="#">Exámenes</a></li>
+                                    </ul>
+                                </li>
+                                <li id="navitem" class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="./cursos.html" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Cursos
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="./investigacion.html">Investigación de Operaciones</a></li>
+                                        <li><a class="dropdown-item" href="./optiprocesos.html">Optimización de procesos</a></li>
+                                        <li><a class="dropdown-item" href="./matecomp.html">Matematica Computacional</a></li>
+                                        <li><a class="dropdown-item" href="ssistemas.html">Simulación de Sistemas</a></li>
+                                        <li><a class="dropdown-item" href="evaluacioec.html">Evaluación Económica</a></li>
+                                    </ul>
+                                </li>
+                                <li id="navitem" class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="./contacto.html">Contacto</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+        
+        <div id="content">
+            <!-- Inicio Tarjetas -->
+            <div id="carouselExampleCaptions" class="carousel slide col-12 m-2">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <!-- <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button> -->
+                </div>
+                <div id="carrusel" class="carousel-inner">
+                    <div id="carrusel-item" class="carousel-item active">
+                        <img src="../IMG/asesorias.jpg" class="d-block w-100" alt="c1">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>First slide label</h5>
+                            <p>Some representative placeholder content for the first slide.</p>
+                        </div>
+                    </div>
+                    <div id="carrusel-item" class="carousel-item active">
+                        <img src="../IMG/asesorias.jpg" class="d-block w-100" alt="c2">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Second slide label</h5>
+                            <p>Some representative placeholder content for the second slide.</p>
+                        </div>
+                    </div>
+                    <!-- <div id="carrusel-item" class="carousel-item active">
+                        <img src="../IMG/asesorias.jpg" class="d-block w-100" alt="c2">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Third slide label</h5>
+                            <p>Some representative placeholder content for the second slide.</p>
+                        </div>
+                    </div> -->
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <!-- fin de carrusel -->
+            <!-- Inicio barra lateral -->
+            <aside id="lateral">
+                <h3>BUSCAR</h3>
+                <div class="clearfix"></div>
+                <div id="search">
+                    <form>
+                        <input type="text">
+                        <input type="button" value="L" class="icon">
+                    </form>
+                </div>
+                <h3>LOGIN</h3>
+                <div class="clearfix"></div>
+                <div id="login" class="aside-box">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                placeholder="Password">
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1"></label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </aside>
+
+            <!-- Fin barra lateral -->
+            <!-- Inicio Notas -->
+            <div class="notas">
+                <ol class="list-group list-group-numbered col-4 m-5">
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold">Tesis 2</div>
+                            Sustentación Simulación de Escenarios
+                        </div>
+                        <span class="badge bg-primary rounded-pill">19</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold">Tesis 3</div>
+                            Sustentación Evaluiación Económica
+                        </div>
+                        <span class="badge bg-primary rounded-pill">17</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold">Tesis 3</div>
+                            Sustentación Evaluiación Económica
+                        </div>
+                        <span class="badge bg-primary rounded-pill">20</span>
+                    </li>
+                </ol>
+
+                <ol class="list-group list-group-numbered col-4 m-5">
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold">PC1 SSD</div> 
+                        </div>
+                        <span class="badge bg-primary rounded-pill">20</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold">PC3 OP</div>    
+                        </div>
+                        <span class="badge bg-primary rounded-pill">18</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold">PC1 IOP</div>  
+                        </div>
+                        <span class="badge bg-primary rounded-pill">19</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold">PC1 SSD</div> 
+                        </div>
+                        <span class="badge bg-primary rounded-pill">20</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold">PC3 OP</div>    
+                        </div>
+                        <span class="badge bg-primary rounded-pill">18</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold">PC1 IOP</div>  
+                        </div>
+                        <span class="badge bg-primary rounded-pill">19</span>
+                    </li>
+                </ol>
+            </div>
+            <!-- Fin notas -->
+            <!-- Inicio Tarjetas -->
+            <div id="cards2">
+                <h2 class="d-flex justify-content-around">PROMOCIONES</h2>
+            <div id="card2" class="card">
+                <div class="red"></div>
+                <div class="card-body">
+                    <h5 class="card-title">Trabajo Final + Asesoria + Exposicion</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-primary">Ver más</a>
+                </div>
+            </div>
+            <div id="card2" class="card">
+                <div class="green"></div>
+                <div class="card-body">
+                    <h5 class="card-title">Paquete completo de Examanes</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-primary">Ver más</a>
+                </div>
+            </div>
+            <div id="card2" class="card">
+                <div class="yellow"></div>
+                <div class="card-body">
+                    <h5 class="card-title">Examen Sustiturio</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-primary">Ver más</a>
+                </div>
+            </div>
+            </div>
+            
+            <!-- Fin tarjetas -->
+        </div>
+        <!-- Inicio Footer -->
+        <div class="clearfix"></div>
+        <footer id="footer">
+            <div id="wrap">
+
+                <div id="menu-footer">
+                    <h5>MENÚ</h5>
+                    <ul>
+                        <li><a href="#">INICIO</a></li>
+                        <li><a href="#">BLOG</a></li>
+                        <li><a href="#">FORMACION</a></li>
+                        <li><a href="#">CONTACTO</a></li>
+                    </ul>
+                </div>
+
+                <div id="location">
+                    <h5>UBICACIÓN</h5>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.2102085452716!2d-76.9753744256581!3d-12.097757042850771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c7a4f64c9303%3A0x73c74957c17029b9!2sAv.%20El%20Derby%20254%2C%20Santiago%20de%20Surco%2015023!5e0!3m2!1ses!2spe!4v1686354342185!5m2!1ses!2spe"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <div id="social">
+                    <h5>REDES SOCIALES</h5>
+                    <div class="instagram social">
+                        <p class="icon">I</p><a href="#">https/:instagram.com/asesoriasonline</a><br>
+                    </div>
+                    <div class="facebook social">
+                        <p class="icon">f</p><a href="#">https/:facebook.com/asesoriasonline</a><br>
+                    </div>
+                    <div class="youtube social">
+                        <p class="icon">y</p><a href="#">https/:youtube.com/asesoriasonline</a><br>
+                    </div>
+                    <div class="copy">
+                        <p><strong>&copy;Desarrolado por Piero Nolte</strong></p><br>
+                        <p>Más contenido en Piero Nolte WEB</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </footer>
+        <!-- Fin Footer -->
+
+    </div>
+</body>
+<script type="text/javascript" src="./jquery/code.jquery.com_jquery-3.7.0.min.js"></script>
+
+</html>
