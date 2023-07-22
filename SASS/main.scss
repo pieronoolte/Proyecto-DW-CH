@@ -48,10 +48,11 @@ body {
     margin: 0 auto;
 
     .header__logotipo {
-        img {
+        p {
             display: block;
             width: 30%;
             height: auto;
+            font-size: 10rem;
             text-align: center;
             margin: 0px auto;
         }
@@ -62,13 +63,13 @@ body {
             display: block;
             text-align: center;
             text-decoration: none;
-            font-family: sans-serif;
             cursor: default;
+            margin: 2%;
             margin-top: 20px;
-            font-size: 55px;
+            margin-left: 10px;
+            font-size: 4.8rem;
             color: rgb(114, 21, 21);
             text-shadow: 1px 2px 3px rgba(7, 6, 6, 0.842);
-
         }
     }
 }
@@ -158,7 +159,7 @@ body {
 
 /* TARJETAS */
 
-.content__title{
+.content__title {
     display: block;
     margin-left: 80px;
     margin-top: 15px;
@@ -166,90 +167,97 @@ body {
     color: rgb(114, 21, 21);
     text-shadow: 0px 0px 2px rgba(7, 6, 6, 0.842);
 }
-
-.content__card {
-    float: left;
-    width: 205px;
-    height: 305px;
-    border: 1px solid #ccc;
-    box-shadow: 1px 1px 2px #ddd;
-    background-color: white;
-    overflow: hidden;
-    margin: 22px;
-    margin-top: 40px;
-    cursor: pointer;
-
-    &:last-child {
-        margin-right: 0px;
+.main__content{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-left: 7%;
+    .content__card {
+        float: left;
+        width: 205px;
+        height: 305px;
+    
+        border: 1px solid #ccc;
+        box-shadow: 1px 1px 2px #ddd;
+        background-color: white;
+        overflow: hidden;
+        margin: 22px;
+        margin-top: 40px;
+        cursor: pointer;
+    
+        &:last-child {
+            margin-right: 0px;
+        }
+    
+        .text--icon {
+            display: block;
+            width: 100%;
+            height: 130px;
+            font-size: 50px;
+            line-height: 110px;
+            text-align: center;
+            margin: 0PX auto;
+        }
+    
+        .card__category {
+            width: 100%;
+            height: 50px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 21px;
+            font-weight: bold;
+            text-align: center;
+            color: rgba(7, 6, 6, 0.842);
+        }
+    
+        .card__description {
+            font-family: 'Montserrat', sans-serif;
+            text-align: center;
+            color: rgba(7, 6, 6, 0.842);
+            font-size: 15px;
+            margin-top: 5px;
+            padding: 3px;
+        }
+    
     }
-
-    .text--icon {
-        display: block;
-        width: 100%;
-        height: 130px;
-        font-size: 50px;
-        line-height: 110px;
-        text-align: center;
-        margin: 0PX auto;
+    
+    .content__card--universidad {
+        float: left;
+        width: 205px;
+        height: 205px;
+        border: 1px solid #ccc;
+        box-shadow: 1px 1px 2px #ddd;
+        background-color: white;
+        overflow: hidden;
+        margin: 22px;
+        margin-top: 40px;
+        cursor: pointer;
+    
+        &:last-child {
+            margin-right: 0px;
+        }
+    
+        .text--icon {
+            display: block;
+            width: 100%;
+            height: 130px;
+            font-size: 50px;
+            line-height: 110px;
+            text-align: center;
+            margin: 0PX auto;
+        }
+    
+        .card__category {
+            width: 100%;
+            height: 50px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 21px;
+            font-weight: bold;
+            text-align: center;
+            color: rgba(7, 6, 6, 0.842);
+        }
+    
     }
-
-    .card__category {
-        width: 100%;
-        height: 50px;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 21px;
-        font-weight: bold;
-        text-align: center;
-        color: rgba(7, 6, 6, 0.842);
-    }
-
-    .card__description {
-        font-family: 'Montserrat', sans-serif;
-        text-align: center;
-        color: rgba(7, 6, 6, 0.842);
-        font-size: 15px;
-        margin-top: 5px;
-        padding: 3px;
-    }
-
-}
-
-.content__card--universidad {
-    float: left;
-    width: 205px;
-    height: 205px;
-    border: 1px solid #ccc;
-    box-shadow: 1px 1px 2px #ddd;
-    background-color: white;
-    overflow: hidden;
-    margin: 22px;
-    margin-top: 40px;
-    cursor: pointer;
-
-    &:last-child {
-        margin-right: 0px;
-    }
-
-    .text--icon {
-        display: block;
-        width: 100%;
-        height: 130px;
-        font-size: 50px;
-        line-height: 110px;
-        text-align: center;
-        margin: 0PX auto;
-    }
-
-    .card__category {
-        width: 100%;
-        height: 50px;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 21px;
-        font-weight: bold;
-        text-align: center;
-        color: rgba(7, 6, 6, 0.842);
-    }
-
+    
 }
 
 /* BARRA LATERAL */
@@ -461,40 +469,38 @@ aside {
 
 /* INICIO BARRA LATERAL 2 */
 #main__lateral {
-    width: 25%;
+    width: 32%;
     min-height: 600px;
-    font-family: 'Montserrat', sans-serif;
     float: right;
-    margin-top: 0px;
     margin: 1%;
     border: 3px solid grey;
     border-radius: 5px;
-    
 
-    h3{
+
+    h3 {
         margin-top: 10%;
         margin-left: 3%;
     }
 
-    #lateral__login{
+    #lateral__login {
         width: 80%;
         margin: 0 auto;
         margin-top: 5%;
     }
 
-    #lateral__search{
+    #lateral__search {
         width: 80%;
         margin: 0 auto;
         margin-top: 10%;
     }
 }
- 
+
 /* FIN BARRA LATERAL */
 
 /* SECCIONES */
 .main__sections {
     float: right;
-    width: 70%;
+    width: 60%;
     font-family: sans-serif, Arial, Helvetica;
     margin-right: 20px;
 
@@ -544,7 +550,7 @@ aside {
         position: absolute;
         margin-top: -38px;
         z-index: 0;
-        margin-left: 790px;
+        margin-left: 52%;
     }
 }
 
@@ -699,7 +705,7 @@ aside {
         margin-top: 50px;
     }
 
-    input[type="text"]{
+    input[type="text"] {
         width: 50%;
         height: 30px;
         border: none;
@@ -714,7 +720,7 @@ aside {
         color: #555;
     }
 
-    input[type="email"]{
+    input[type="email"] {
         width: 50%;
         height: 30px;
         border: none;
@@ -727,7 +733,7 @@ aside {
         margin: 0px 0px 0px 0px;
     }
 
-    input[type="number"]{
+    input[type="number"] {
         width: 50%;
         height: 30px;
         border: none;
@@ -743,6 +749,7 @@ aside {
         margin-left: 150px;
         margin-right: 10px;
     }
+
     cbox {
         float: left;
     }
@@ -763,7 +770,7 @@ aside {
         box-shadow: 0px 0px 1px rgba(0, 0, 0.3), 0px 3px 7px rgba(0, 0, 0.3), 0px 1px white inset, 0px -3px 2px rgba(0, 0, 0.3) inset;
     }
 
-    input[type="submit"]{
+    input[type="submit"] {
         text-align: center;
         width: 100px;
         height: 35px;
@@ -782,12 +789,12 @@ aside {
         transition: all 300ms;
     }
 
-    input[type="submit"]:hover{
+    input[type="submit"]:hover {
         box-shadow: 0px 0px 3px black inset;
     }
-    
 
-    input[type="reset"]{
+
+    input[type="reset"] {
         text-align: center;
         width: 100px;
         height: 35px;
@@ -806,25 +813,33 @@ aside {
         transition: all 300ms;
     }
 
-    input[type="reset"]:hover{
+    input[type="reset"]:hover {
         box-shadow: 0px 0px 3px black inset;
     }
 }
 
 
 /* BOOTSTRAP */
-.notas {
-    display: flex;
-    flex-direction: row;
-}
-
-#cards2{
-    width: 72%;
+.section__notas {
     display: flex;
     flex-flow: row wrap;
+    width: 65%;
 
-    #card2{
-    
+}
+
+.section__nota {
+    width: 95%;
+}
+
+#cards2 {
+    width: 80%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-left: 7%;
+
+    #card2 {
+
         width: 100%;
         height: 250px;
     }
@@ -843,11 +858,12 @@ aside {
     height: 30%;
 }
 
-.gray{
+.gray {
     background: rgb(109, 109, 109);
     width: auto;
     height: 30%;
 }
+
 .green {
     background: greenyellow;
     width: auto;
@@ -860,47 +876,76 @@ aside {
     height: 30%;
 }
 
-#navitem{
+#navitem {
     margin-left: 15%;
     font-size: 1.3rem;
 }
 
 /* RESPONSIVE */
 @media(max-width:574px) {
-    .main__lateral{
+    .main__lateral {
         display: none;
     }
 
+    .header {
+        .header__logotipo {
+            p {
+                font-size: 7rem;
+
+            }
+        }
+
+        h1 {
+            a {
+                font-size: 3.8rem;
+
+            }
+        }
+    }
 }
+
+
 
 
 @media(max-width: 767px) {
-    #section__notas{
+    .section__notas {
+        width: 95%;
         height: 600px;
+
     }
-    .main__lateral{
+
+    .main__lateral {
         display: none;
     }
 
-    #main__lateral{
+    .main__sections{
+        width: 90%;
+        margin: 0 auto;
+    }
+    #main__lateral {
         display: none;
     }
+
     #sections {
         width: 94%;
     }
+    .news__sticker2 {
+        margin-left: 95%;
+    }
 }
 
+
 /*NOTAS*/
-#section__notas{
+#section__notas {
     width: 70%;
-    height:auto;
+    height: auto;
     margin-top: 1%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin: 0 auto;
 
-    span{
+    span {
         text-align: center;
         margin-top: 5%;
         margin-bottom: 5%;

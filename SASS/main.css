@@ -41,10 +41,11 @@ body {
   width: 100%;
   margin: 0 auto;
 }
-.header .header__logotipo img {
+.header .header__logotipo p {
   display: block;
   width: 30%;
   height: auto;
+  font-size: 10rem;
   text-align: center;
   margin: 0px auto;
 }
@@ -52,10 +53,11 @@ body {
   display: block;
   text-align: center;
   text-decoration: none;
-  font-family: sans-serif;
   cursor: default;
+  margin: 2%;
   margin-top: 20px;
-  font-size: 55px;
+  margin-left: 10px;
+  font-size: 4.8rem;
   color: rgb(114, 21, 21);
   text-shadow: 1px 2px 3px rgba(7, 6, 6, 0.842);
 }
@@ -141,7 +143,13 @@ body {
   text-shadow: 0px 0px 2px rgba(7, 6, 6, 0.842);
 }
 
-.content__card {
+.main__content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-left: 7%;
+}
+.main__content .content__card {
   float: left;
   width: 205px;
   height: 305px;
@@ -153,10 +161,10 @@ body {
   margin-top: 40px;
   cursor: pointer;
 }
-.content__card:last-child {
+.main__content .content__card:last-child {
   margin-right: 0px;
 }
-.content__card .text--icon {
+.main__content .content__card .text--icon {
   display: block;
   width: 100%;
   height: 130px;
@@ -165,7 +173,7 @@ body {
   text-align: center;
   margin: 0PX auto;
 }
-.content__card .card__category {
+.main__content .content__card .card__category {
   width: 100%;
   height: 50px;
   font-family: "Montserrat", sans-serif;
@@ -174,7 +182,7 @@ body {
   text-align: center;
   color: rgba(7, 6, 6, 0.842);
 }
-.content__card .card__description {
+.main__content .content__card .card__description {
   font-family: "Montserrat", sans-serif;
   text-align: center;
   color: rgba(7, 6, 6, 0.842);
@@ -182,8 +190,7 @@ body {
   margin-top: 5px;
   padding: 3px;
 }
-
-.content__card--universidad {
+.main__content .content__card--universidad {
   float: left;
   width: 205px;
   height: 205px;
@@ -195,10 +202,10 @@ body {
   margin-top: 40px;
   cursor: pointer;
 }
-.content__card--universidad:last-child {
+.main__content .content__card--universidad:last-child {
   margin-right: 0px;
 }
-.content__card--universidad .text--icon {
+.main__content .content__card--universidad .text--icon {
   display: block;
   width: 100%;
   height: 130px;
@@ -207,7 +214,7 @@ body {
   text-align: center;
   margin: 0PX auto;
 }
-.content__card--universidad .card__category {
+.main__content .content__card--universidad .card__category {
   width: 100%;
   height: 50px;
   font-family: "Montserrat", sans-serif;
@@ -399,11 +406,9 @@ aside h3:first-child {
 
 /* INICIO BARRA LATERAL 2 */
 #main__lateral {
-  width: 25%;
+  width: 32%;
   min-height: 600px;
-  font-family: "Montserrat", sans-serif;
   float: right;
-  margin-top: 0px;
   margin: 1%;
   border: 3px solid grey;
   border-radius: 5px;
@@ -427,7 +432,7 @@ aside h3:first-child {
 /* SECCIONES */
 .main__sections {
   float: right;
-  width: 70%;
+  width: 60%;
   font-family: sans-serif, Arial, Helvetica;
   margin-right: 20px;
 }
@@ -471,7 +476,7 @@ aside h3:first-child {
   position: absolute;
   margin-top: -38px;
   z-index: 0;
-  margin-left: 790px;
+  margin-left: 52%;
 }
 
 /* FOOTER */
@@ -702,15 +707,22 @@ aside h3:first-child {
 }
 
 /* BOOTSTRAP */
-.notas {
+.section__notas {
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
+  width: 65%;
+}
+
+.section__nota {
+  width: 95%;
 }
 
 #cards2 {
-  width: 72%;
+  width: 80%;
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
+  margin-left: 7%;
 }
 #cards2 #card2 {
   width: 100%;
@@ -757,19 +769,33 @@ aside h3:first-child {
   .main__lateral {
     display: none;
   }
+  .header .header__logotipo p {
+    font-size: 7rem;
+  }
+  .header h1 a {
+    font-size: 3.8rem;
+  }
 }
 @media (max-width: 767px) {
-  #section__notas {
+  .section__notas {
+    width: 95%;
     height: 600px;
   }
   .main__lateral {
     display: none;
+  }
+  .main__sections {
+    width: 90%;
+    margin: 0 auto;
   }
   #main__lateral {
     display: none;
   }
   #sections {
     width: 94%;
+  }
+  .news__sticker2 {
+    margin-left: 95%;
   }
 }
 /*NOTAS*/
