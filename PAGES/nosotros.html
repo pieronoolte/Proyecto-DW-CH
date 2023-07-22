@@ -5,18 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../SASS/main.css">
     <link rel="icon" type="img/x-icon" href="../IMG/logo.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <title>Examenes</title>
+    <title>Nosotros</title>
 </head>
 
 <body>
     <!-- Inicio de la Cabecera -->
-    <header id="header">
-        <div id="logotipo">
+    <header class="header">
+        <div class="header__logotipo">
             <img src="../IMG/logo.jpg" alt="Logotipo de la web">
         </div>
 
@@ -26,12 +26,10 @@
     </header>
     <!-- Fin de la cabecera -->
     <!-- Inicio de Navegacion -->
-    <nav id="nav">
+    <nav class="nav">
         <ul>
             <li><a href="../index.html">Inicio</a></li>
-
             <li><a href="./nosotros.html">Nosotros</a></li>
-
             <li>
             <li><a href="./servicios.html">Servicios</a>
                 <ul>
@@ -39,7 +37,6 @@
                     <li><a href="./asesorias.html">Asesorias</a></li>
                 </ul>
             </li>
-
             <li>
             <li><a href="./cursos.html">Cursos</a>
                 <ul>
@@ -50,110 +47,108 @@
                     <li><a href="./evaluacioec.html">Evaluacion Economica</a></li>
                 </ul>
             </li>
-
             <li><a href="./contacto.html">Contacto</a></li>
-
         </ul>
     </nav>
     <!-- Fin de la navegacion -->
 
     <!-- Inicio contenido  central-->
-    <div id="content">
+    <main class="main">
         <!-- Inicio tarjetas -->
-        <h2 class="title-cards">CURSOS</h2>
+        <h2 class="content__title">CURSOS</h2>
 
-        <div id="cards">
-            <div class="card">
-                <p class="icon">H</p>
-                <h2 class="category">Investigación de Operaciones</h2>
-                <p class="description">
+        <div class="main_content">
+            <div class="content__card">
+                <p class="text--icon">H</p>
+                <h2 class="card__category">Investigación de Operaciones</h2>
+                <p class="card__description">
                     Aprende a programar en Lingo en base a una funcion objetivo
                 </p>
             </div>
 
-            <div class="card">
-                <p class="icon">_</p>
-                <h2 class="category">Optimización de procesos</h2>
-                <p class="description">
-                    Aprende investigació de operaciones a nivel intermedio
+            <div class="content__card">
+                <p class="text--icon">H</p>
+                <h2 class="card__category">Investigación de Operaciones</h2>
+                <p class="card__description">
+                    Aprende a programar en Lingo en base a una funcion objetivo
                 </p>
             </div>
 
-            <div class="card">
-                <p class="icon">S</p>
-                <h2 class="category">Matemática Computacional</h2>
-                <p class="description">
-                    Conoce los conceptos basicos de Matemática en la computación
+            <div class="content__card">
+                <p class="text--icon">H</p>
+                <h2 class="card__category">Investigación de Operaciones</h2>
+                <p class="card__description">
+                    Aprende a programar en Lingo en base a una funcion objetivo
                 </p>
             </div>
 
-            <div class="card">
-                <p class="icon">u</p>
-                <h2 class="category">Simulación de Sistemas</h2>
-                <p class="description">
-                    Evalua indicadores por medio de modelos de simulación
+            <div class="content__card">
+                <p class="text--icon">H</p>
+                <h2 class="card__category">Investigación de Operaciones</h2>
+                <p class="card__description">
+                    Aprende a programar en Lingo en base a una funcion objetivo
                 </p>
             </div>
 
-            <div class="card">
-                <p class="icon">a</p>
-                <h2 class="category">Evaluación Económica</h2>
-                <p class="description">
-                    Aprende a analizar la viabilidad economica de un proyecto
+            <div class="content__card">
+                <p class="text--icon">H</p>
+                <h2 class="card__category">Investigación de Operaciones</h2>
+                <p class="card__description">
+                    Aprende a programar en Lingo en base a una funcion objetivo
                 </p>
             </div>
         </div>
 
         <div class="clearfix"></div>
 
-        <h2 class="title-cards">UNIVERSIDADES</h2>
+        <h2 class="content__title">UNIVERSIDADES</h2>
 
-        <div id="cards uni">
-            <div class="card">
-                <p class="icon">H</p>
-                <h2 class="category">UCP</h2>
+        <div class="main__content">
+            <div class="content__card--universidad">
+                <p class="text--icon">H</p>
+                <h2 class="card__category">UCP</h2>
             </div>
 
-            <div class="card">
-                <p class="icon">_</p>
-                <h2 class="category">USIL</h2>
+            <div class="content__card--universidad">
+                <p class="text--icon">H</p>
+                <h2 class="card__category">UCP</h2>
             </div>
 
-            <div class="card">
-                <p class="icon">S</p>
-                <h2 class="category">UL</h2>
+            <div class="content__card--universidad">
+                <p class="text--icon">H</p>
+                <h2 class="card__category">UCP</h2>
             </div>
 
-            <div class="card">
-                <p class="icon">u</p>
-                <h2 class="category">PUCP</h2>
+           <div class="content__card--universidad">
+                <p class="text--icon">H</p>
+                <h2 class="card__category">UCP</h2>
             </div>
 
-            <div class="card">
-                <p class="icon">a</p>
-                <h2 class="category">URP</h2>
+            <div class="content__card--universidad">
+                <p class="text--icon">H</p>
+                <h2 class="card__category">UCP</h2>
             </div>
         </div>
         <!-- Fin tarjetas -->
 
         <!-- Inicio barra lateral -->
-        <aside id="lateral">
+        <aside class="main__lateral">
             <h3>BUSCAR</h3>
             <div class="clearfix"></div>
-            <div id="search">
+            <div class="lateral__search">
                 <form>
                     <input type="text">
-                    <input type="button" value="L" class="icon">
+                    <input type="button" value="L" class="text--icon">
                 </form>
             </div>
             <h3>LOGIN</h3>
             <div class="clearfix"></div>
-            <div id="login" class="aside-box">
+            <div id="lateral__login" class="lateral__login--box">
                 <form>
-                    <label id="user" for="email" class="icon">U</label>
+                    <label id="login__user" for="email" class="text--icon">U</label>
                     <input type="email" name="email">
 
-                    <label id="password" for="password" class="icon">w</label>
+                    <label id="login__password" for="password" class="text--icon">w</label>
                     <input type="password" name="password">
 
                     <input type="submit" value="Entrar">
@@ -168,62 +163,145 @@
         <!-- Fin barra lateral -->
 
         <!-- Inicio Secciones -->
-        <div id="sections">
-            <section id="noticias">
-                <span class="stickers">
-                    <img class="sticker1" src="../IMG/scotch.png" alt="Pegatina1">
-                    <img class="sticker2" src="../IMG/scotch.png" alt="Pegatina2">
+        <div class="main__sections">
+            <section class="sections__news">
+                <span class="news__stickers">
+                    <img class="news__sticker1" src="../IMG/scotch.png" alt="Pegatina1">
+                    <img class="news__sticker2" src="../IMG/scotch.png" alt="Pegatina2">
                 </span>
-                <h2 class="titulo">Trayectoria</h2>
-                <article class="article">
-                    <span class="icon">a</span>
+                <h2 class="news__title">Ultimas Noticias</h2>
+                <article class="news__article">
+                    <span class="text--icon">a</span>
                     <p>
-                        <a href="#">Titulo de entrada</a>
+                        <a href="#">Proximamente asesorias y examenes en progrmación 1 y 2</a>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti ipsam eveniet ut perferendis!
                         In laborum iusto accusamus atque adipisci animi repudiandae, voluptatem quod nostrum. Facere
                         voluptatem unde doloribus molestiae autem.
                     </p>
                     <img src="#" alt="#">
-                    <span class="date">[03.06.2023. Asesorias online]</span>
+                    <span class="news__date">[03.06.2023. Asesorias online]</span>
                 </article>
 
-                <article class="article">
-                    <span class="icon">a</span>
+                <article class="news__article">
+                    <span class="text--icon">a</span>
                     <p>
-                        <a href="#">Titulo de entrada</a>
+                        <a href="#">Promociones y beneficios por ser alumno de más de 3 cursos</a>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti ipsam eveniet ut perferendis!
                         In laborum iusto accusamus atque adipisci animi repudiandae, voluptatem quod nostrum. Facere
                         voluptatem unde doloribus molestiae autem.
                     </p>
                     <img src="#" alt="#">
-                    <span class="date">[03.06.2023. Asesorias online]</span>
+                    <span class="news__date">[03.06.2023. Asesorias online]</span>
                 </article>
 
-                <article class="article">
-                    <span class="icon">a</span>
+                <article class="news__article">
+                    <span class="text--icon">a</span>
                     <p>
-                        <a href="#">Titulo de entrada</a>
+                        <a href="#">Como instalar los software Arena y Promodel</a>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti ipsam eveniet ut perferendis!
                         In laborum iusto accusamus atque adipisci animi repudiandae, voluptatem quod nostrum. Facere
                         voluptatem unde doloribus molestiae autem.
                     </p>
                     <img src="#" alt="#">
-                    <span class="date">[03.06.2023. Asesorias online]</span>
+                    <span class="news__date">[03.06.2023. Asesorias online]</span>
+                </article>
+            </section>
+
+            <section class="sections__news">
+                <span class="news__stickers">
+                    <img class="news__sticker1" src="../IMG/scotch.png" alt="Pegatina1">
+                    <img class="news__sticker2" src="../IMG/scotch.png" alt="Pegatina2">
+                </span>
+                <h2 class="news__title">Ultimas Noticias</h2>
+                <article class="news__article">
+                    <span class="text--icon">a</span>
+                    <p>
+                        <a href="#">Proximamente asesorias y examenes en progrmación 1 y 2</a>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti ipsam eveniet ut perferendis!
+                        In laborum iusto accusamus atque adipisci animi repudiandae, voluptatem quod nostrum. Facere
+                        voluptatem unde doloribus molestiae autem.
+                    </p>
+                    <img src="#" alt="#">
+                    <span class="news__date">[03.06.2023. Asesorias online]</span>
+                </article>
+
+                <article class="news__article">
+                    <span class="text--icon">a</span>
+                    <p>
+                        <a href="#">Promociones y beneficios por ser alumno de más de 3 cursos</a>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti ipsam eveniet ut perferendis!
+                        In laborum iusto accusamus atque adipisci animi repudiandae, voluptatem quod nostrum. Facere
+                        voluptatem unde doloribus molestiae autem.
+                    </p>
+                    <img src="#" alt="#">
+                    <span class="news__date">[03.06.2023. Asesorias online]</span>
+                </article>
+
+                <article class="news__article">
+                    <span class="text--icon">a</span>
+                    <p>
+                        <a href="#">Como instalar los software Arena y Promodel</a>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti ipsam eveniet ut perferendis!
+                        In laborum iusto accusamus atque adipisci animi repudiandae, voluptatem quod nostrum. Facere
+                        voluptatem unde doloribus molestiae autem.
+                    </p>
+                    <img src="#" alt="#">
+                    <span class="news__date">[03.06.2023. Asesorias online]</span>
+                </article>
+            </section>
+
+            <section class="sections__news">
+                <span class="news__stickers">
+                    <img class="news__sticker1" src="../IMG/scotch.png" alt="Pegatina1">
+                    <img class="news__sticker2" src="../IMG/scotch.png" alt="Pegatina2">
+                </span>
+                <h2 class="news__title">Ultimas Noticias</h2>
+                <article class="news__article">
+                    <span class="text--icon">a</span>
+                    <p>
+                        <a href="#">Proximamente asesorias y examenes en progrmación 1 y 2</a>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti ipsam eveniet ut perferendis!
+                        In laborum iusto accusamus atque adipisci animi repudiandae, voluptatem quod nostrum. Facere
+                        voluptatem unde doloribus molestiae autem.
+                    </p>
+                    <img src="#" alt="#">
+                    <span class="news__date">[03.06.2023. Asesorias online]</span>
+                </article>
+
+                <article class="news__article">
+                    <span class="text--icon">a</span>
+                    <p>
+                        <a href="#">Promociones y beneficios por ser alumno de más de 3 cursos</a>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti ipsam eveniet ut perferendis!
+                        In laborum iusto accusamus atque adipisci animi repudiandae, voluptatem quod nostrum. Facere
+                        voluptatem unde doloribus molestiae autem.
+                    </p>
+                    <img src="#" alt="#">
+                    <span class="news__date">[03.06.2023. Asesorias online]</span>
+                </article>
+
+                <article class="news__article">
+                    <span class="text--icon">a</span>
+                    <p>
+                        <a href="#">Como instalar los software Arena y Promodel</a>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti ipsam eveniet ut perferendis!
+                        In laborum iusto accusamus atque adipisci animi repudiandae, voluptatem quod nostrum. Facere
+                        voluptatem unde doloribus molestiae autem.
+                    </p>
+                    <img src="#" alt="#">
+                    <span class="news__date">[03.06.2023. Asesorias online]</span>
                 </article>
             </section>
         </div>
-
-        <div class="clearfix"></div>
         <!-- Fin secciones -->
-    </div>
+    </main>
     <!-- Fin contenido central -->
 
     <!-- Inicio Footer -->
     <div class="clearfix"></div>
-    <footer id="footer">
-        <div id="wrap">
-            
-            <div id="menu-footer">
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__menu">
                 <h5>MENÚ</h5>
                 <ul>
                     <li><a href="#">INICIO</a></li>
@@ -233,32 +311,30 @@
                 </ul>
             </div>
 
-            <div id="location">
+            <div class="footer__location">
                 <h5>UBICACIÓN</h5>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.2102085452716!2d-76.9753744256581!3d-12.097757042850771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c7a4f64c9303%3A0x73c74957c17029b9!2sAv.%20El%20Derby%20254%2C%20Santiago%20de%20Surco%2015023!5e0!3m2!1ses!2spe!4v1686354342185!5m2!1ses!2spe"
                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-           
-            <div id="social">
+
+            <div class="footer__social">
                 <h5>REDES SOCIALES</h5>
-                <div class="instagram">
-                    <p class="icon">I</p><a href="#">https/:instagram.com/asesoriasonline</a><br>
+                <div class="social__instagram">
+                    <p class="text--icon">I</p><a href="#">https/:instagram.com/asesoriasonline</a><br>
                 </div>
-                <div class="facebook">
-                    <p class="icon">f</p><a href="#">https/:facebook.com/asesoriasonline</a><br>
+                <div class="social__facebook">
+                    <p class="text--icon">f</p><a href="#">https/:facebook.com/asesoriasonline</a><br>
                 </div>
-                <div class="youtube">
-                    <p class="icon">y</p><a href="#">https/:youtube.com/asesoriasonline</a><br>
+                <div class="social__youtube">
+                    <p class="text--icon">y</p><a href="#">https/:youtube.com/asesoriasonline</a><br>
                 </div>
-                <div class="copy">
+                <div class="social__copy">
                     <p><strong>&copy;Desarrolado por Piero Nolte</strong></p><br>
                     <p>Más contenido en Piero Nolte WEB</p>
                 </div>
             </div>
-
-           
         </div>
     </footer>
     <!-- Fin Footer -->
