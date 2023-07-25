@@ -665,7 +665,7 @@ aside {
 /* PAGINA CONTACTO */
 #contacto {
     width: 60%;
-    height: 750px;
+    height: 900px;
     margin: 0px auto;
     margin-top: 60px;
     text-align: center;
@@ -701,6 +701,15 @@ aside {
         }
     }
 
+    .form__cbox{
+        display: flex;
+        flex-flow: column;
+        height: auto;
+        
+        .cbox{
+            margin-inline-start: -10%
+        }
+    }
     .form:first-child {
         margin-top: 50px;
     }
@@ -744,25 +753,17 @@ aside {
         transition: all 300ms;
     }
 
-    input[type="checkbox"] {
-        float: left;
-        margin-left: 150px;
-        margin-right: 10px;
-    }
-
-    cbox {
-        float: left;
-    }
-
     .form-label {
         float: left;
-        margin-left: 100px;
+        margin-left: 50px;
+        margin-top: 20px;
         margin-bottom: 10px;
+        font-size: 20px;
     }
 
     .login-box {
         width: 100%;
-        height: 750px;
+        height: 900px;
         margin: 0px auto;
         margin-top: 20px;
         padding-top: 2px;

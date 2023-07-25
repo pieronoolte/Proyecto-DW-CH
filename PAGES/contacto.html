@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="../SASS/main.css">
     <link rel="icon" type="img/x-icon" href="../IMG/logo.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,41 +19,60 @@
 
 <body>
     <!-- Inicio de la Cabecera -->
-    <header class="header">
-        <div class="header__logotipo">
-            <img src="../IMG/logo.jpg" alt="Logotipo de la web">
-        </div>
+    <header class="header" class="col-12">
 
+        <div class="header__logotipo">
+            <p class="text--icon">u</p>
+        </div>
         <h1>
             <a href="../index.html">ASESORIAS ONLINE</a>
         </h1>
+        <!-- Fin de la Cabecera -->
+        <!-- Inicio Navegacion -->
+        <nav class="navbar navbar-expand-lg bg-dark w-100" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a id="navitem" class="navbar-brand" href="../index.html">Inicio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li id="navitem" class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./nosotros.html">Nosotros</a>
+                        </li>
+                        <li id="navitem" class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="./servicios.html" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Servicios
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./asesorias.html">Asesorías</a></li>
+                                <li><a class="dropdown-item" href="./examenes.html">Exámenes</a></li>
+                            </ul>
+                        </li>
+                        <li id="navitem" class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="./cursos.html" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Cursos
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./investigacion.html">Investigación de Operaciones</a></li>
+                                <li><a class="dropdown-item" href="./optiprocesos.html">Optimización de procesos</a></li>
+                                <li><a class="dropdown-item" href="./matecomp.html">Matematica Computacional</a></li>
+                                <li><a class="dropdown-item" href="./ssistemas.html">Simulación de Sistemas</a></li>
+                                <li><a class="dropdown-item" href="./evaluacioec.html">Evaluación Económica</a></li>
+                            </ul>
+                        </li>
+                        <li id="navitem" class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
-    <!-- Fin de la cabecera -->
-    <!-- Inicio de Navegacion -->
-    <nav class="nav">
-        <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="./nosotros.html">Nosotros</a></li>
-            <li>
-            <li><a href="./servicios.html">Servicios</a>
-                <ul>
-                    <li><a href="./examenes.html">Examenes</a></li>
-                    <li><a href="./asesorias.html">Asesorias</a></li>
-                </ul>
-            </li>
-            <li>
-            <li><a href="./cursos.html">Cursos</a>
-                <ul>
-                    <li><a href="./investigacion.html">Investigacion de Operaciones</a></li>
-                    <li><a href="./optiprocesos.html">Optimizacion de procesos</a></li>
-                    <li><a href="./matecomp.html">Matemtica computacional</a></li>
-                    <li><a href="./ssistemas.html">Simulacion de Sistemas</a></li>
-                    <li><a href="./evaluacioec.html">Evaluacion Economica</a></li>
-                </ul>
-            </li>
-            <li><a href="./contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
     <!-- Fin de la navegacion -->
 
     <!-- Inicio contenido  central-->
@@ -92,17 +113,16 @@
                     </select>
                     </div>
 
-                    <div class="form">
+                    
                     <label  class="form-label" for="cbox">Cursos de Interes</label>
-
+                    
                     <div class="clearfix"></div>
-
+                    <div class="form__cbox">
                     <label class="cbox"><input type="checkbox" id="cbox1" value="checkbox1"> Simulacion de Sistemas</label><br>
                     <label class="cbox"><input type="checkbox" id="cbox2" value="checkbox2"> Matemática Computacional</label><br>
                     <label class="cbox"><input type="checkbox" id="cbox3" value="checkbox3"> Optimización de Procesos</label><br>
                     <label class="cbox"><input type="checkbox" id="cbox4" value="checkbox4"> Investigación Operaciones</label><br>
                     <label class="cbox"><input type="checkbox" id="cbox5" value="checkbox5"> Evaluación Económica</label><br>
-                    
                     </div>
 
                     <div class="clearfix"></div>
@@ -160,4 +180,8 @@
     <!-- Fin Footer -->
     
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+<script type="text/javascript" src="./jquery/code.jquery.com_jquery-3.7.0.min.js"></script>
 </html>

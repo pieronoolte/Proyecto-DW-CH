@@ -572,7 +572,7 @@ aside h3:first-child {
 /* PAGINA CONTACTO */
 #contacto {
   width: 60%;
-  height: 750px;
+  height: 900px;
   margin: 0px auto;
   margin-top: 60px;
   text-align: center;
@@ -602,6 +602,14 @@ aside h3:first-child {
   font-size: 15px;
   text-align: center;
   margin-left: 50px;
+}
+#contacto .form__cbox {
+  display: flex;
+  flex-flow: column;
+  height: auto;
+}
+#contacto .form__cbox .cbox {
+  margin-inline-start: -10%;
 }
 #contacto .form:first-child {
   margin-top: 50px;
@@ -641,22 +649,16 @@ aside h3:first-child {
   color: rgba(7, 6, 6, 0.842);
   transition: all 300ms;
 }
-#contacto input[type=checkbox] {
-  float: left;
-  margin-left: 150px;
-  margin-right: 10px;
-}
-#contacto cbox {
-  float: left;
-}
 #contacto .form-label {
   float: left;
-  margin-left: 100px;
+  margin-left: 50px;
+  margin-top: 20px;
   margin-bottom: 10px;
+  font-size: 20px;
 }
 #contacto .login-box {
   width: 100%;
-  height: 750px;
+  height: 900px;
   margin: 0px auto;
   margin-top: 20px;
   padding-top: 2px;
