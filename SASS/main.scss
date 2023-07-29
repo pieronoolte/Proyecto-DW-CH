@@ -1,3 +1,31 @@
+/* VARIABLE*/
+$color-primary: rgb(114, 21, 21);
+$color-secundary: rgba(7, 6, 6, 0.842);
+
+/*  MIXIN */
+@mixin colorcard($color){
+    background: $color;
+    width: auto;
+    height: 30%;
+}
+
+@mixin dflex($justify, $value1, $value2, $value3, $value4){
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: $justify;
+    margin-left: $value1;
+    margin-top: $value2;
+    margin-left: $value3;
+    margin-right: $value4;
+}
+
+@mixin dblock($value1){
+    display: block;
+    text-align: center;
+    margin: $value1;
+}
+
 /* FUENTES */
 @font-face {
     font-family: "WebSymbolsRegular";
@@ -33,7 +61,7 @@ body {
 
 .text--icon {
     font-family: "WebSymbolsRegular";
-    color: rgb(114, 21, 21);
+    color:$color-primary;
 }
 
 .clearfix {
@@ -68,8 +96,8 @@ body {
             margin-top: 20px;
             margin-left: 10px;
             font-size: 4.8rem;
-            color: rgb(114, 21, 21);
-            text-shadow: 1px 2px 3px rgba(7, 6, 6, 0.842);
+            color:$color-primary;
+            text-shadow: 1px 2px 3px $color-secundary;
         }
     }
 }
@@ -117,7 +145,7 @@ body {
         }
 
         &:hover {
-            background-color: rgba(7, 6, 6, 0.842);
+            background-color:$color-secundary;
             box-shadow: 0px 0px 4px inset;
         }
 
@@ -164,8 +192,8 @@ body {
     margin-left: 80px;
     margin-top: 15px;
     font-size: 45px;
-    color: rgb(114, 21, 21);
-    text-shadow: 0px 0px 2px rgba(7, 6, 6, 0.842);
+    color: $color-primary;
+    text-shadow: 0px 0px 2px $color-secundary;
 }
 .main__content{
     display: flex;
@@ -206,13 +234,13 @@ body {
             font-size: 21px;
             font-weight: bold;
             text-align: center;
-            color: rgba(7, 6, 6, 0.842);
+            color:$color-secundary;
         }
     
         .card__description {
             font-family: 'Montserrat', sans-serif;
             text-align: center;
-            color: rgba(7, 6, 6, 0.842);
+            color: $color-secundary;
             font-size: 15px;
             margin-top: 5px;
             padding: 3px;
@@ -253,7 +281,7 @@ body {
             font-size: 21px;
             font-weight: bold;
             text-align: center;
-            color: rgba(7, 6, 6, 0.842);
+            color: $color-secundary;
         }
     
     }
@@ -279,8 +307,8 @@ aside {
         margin-top: 30px;
         margin-bottom: 15px;
         margin-left: 15px;
-        color: rgb(114, 21, 21);
-        text-shadow: 0px 0px 3px rgba(7, 6, 6, 0.842);
+        color:$color-primary;
+        text-shadow: 0px 0px 3px $color-secundary;
     }
 
     h3:first-child {
@@ -342,8 +370,8 @@ aside {
         height: 35px;
         margin-top: 20px;
         color: white;
-        background: linear-gradient(to bottom, rgba(7, 6, 6, 0.842) 0%, #060b0ebb 100%);
-        border: 1px solid rgba(7, 6, 6, 0.842);
+        background: linear-gradient(to bottom, $color-secundary 0%, #060b0ebb 100%);
+        border: 1px solid $color-secundary;
         border-radius: 5px;
         margin-left: 18px;
         cursor: pointer;
@@ -369,8 +397,8 @@ aside {
         height: 35px;
         margin-top: 20px;
         color: white;
-        background: linear-gradient(to bottom, rgba(7, 6, 6, 0.842) 0%, #060b0ebb 100%);
-        border: 1px solid rgba(7, 6, 6, 0.842);
+        background: linear-gradient(to bottom, $color-secundary 0%, #060b0ebb 100%);
+        border: 1px solid $color-secundary;
         border-radius: 5px;
         margin-left: 18px;
         cursor: pointer;
@@ -463,7 +491,7 @@ aside {
 
     a:hover {
         text-decoration: underline;
-        color: rgba(7, 6, 6, 0.842);
+        color:$color-secundary;
     }
 }
 
@@ -511,7 +539,7 @@ aside {
         margin-top: -20px;
         letter-spacing: 1px;
         text-align: center;
-        color: rgb(114, 21, 21);
+        color: $color-primary;
         padding-top: 20px;
         padding-bottom: 10px;
         border-bottom: 1px solid #ccc;
@@ -669,9 +697,9 @@ aside {
     margin-top: 5%;
 
     #form__check--color:checked{
-        background-color: rgb(114, 21, 21);
-        border: 1px solid rgb(114, 21, 21);
-        box-shadow: 0 1px 1px rgb(114, 21, 21);
+        background-color:$color-primary;
+        border: 1px solid $color-primary;
+        box-shadow: 0 1px 1px $color-primary;
     }
 }
 
@@ -703,37 +731,27 @@ aside {
 }
 
 .red--text{
-    color: rgb(114, 21, 21);
+    color: $color-primary;
 }
 
 .red {
-    background: tomato;
-    width: auto;
-    height: 30%;
+    @include colorcard(tomato)
 }
 
 .blue {
-    background: skyblue;
-    width: auto;
-    height: 30%;
+    @include colorcard(skyblue)
 }
 
 .gray {
-    background: rgb(109, 109, 109);
-    width: auto;
-    height: 30%;
+    @include colorcard(rgb(109, 109, 109))
 }
 
 .green {
-    background: greenyellow;
-    width: auto;
-    height: 30%;
+    @include colorcard(greenyellow)
 }
 
 .yellow {
-    background: goldenrod;
-    width: auto;
-    height: 30%;
+    @include colorcard(goldenrod)
 }
 
 #navitem {
