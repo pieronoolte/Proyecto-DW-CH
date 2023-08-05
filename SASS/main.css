@@ -3,8 +3,8 @@
 /* FUENTES */
 @font-face {
   font-family: "WebSymbolsRegular";
-  src: url(../CSS/fonts/websymbols-regular-webfont.eot);
-  src: url(../CSS/fonts/websymbols-regular-webfont.eot?#iefix) format("embedded-opnetype"), url(../CSS/fonts/websymbols-regular-webfont.woff) format("woff"), url(../CSS/fonts/websymbols-regular-webfont.ttf) format("truetype"), url(../CSS/fonts/websymbols-regular-webfont.svg#WebSymbolsRegular) format("svg");
+  src: url(../FONTS/websymbols-regular-webfont.eot);
+  src: url(../FONTS/websymbols-regular-webfont.eot?#iefix) format("embedded-opnetype"), url(../FONTS/websymbols-regular-webfont.woff) format("woff"), url(../FONTS/websymbols-regular-webfont.ttf) format("truetype"), url(../FONTS/websymbols-regular-webfont.svg#WebSymbolsRegular) format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -995,7 +995,7 @@ aside h3:first-child {
     width: 100%;
     height: auto;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 0.1fr 0.95fr 1fr 0.45fr 0.05fr 0.05fr 0.5fr;
+    grid-template-rows: 0.1fr 0.95fr 1fr 0.45fr 0.55fr 0.3fr 0.5fr;
   }
   #content-grid-2 #sections {
     width: 94%;
@@ -1028,6 +1028,30 @@ aside h3:first-child {
   #content-grid-3 #section__cards #section__card {
     margin-top: 15%;
     margin-bottom: 15%;
+  }
+  #footer iframe {
+    width: 82%;
+    height: 250px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 5px solid white;
+    box-shadow: 0px 0px 5px gray;
+  }
+  #footer #footer__social .copy {
+    margin-top: 50px;
+    margin-left: 20px;
+  }
+  #footer #footer__social .social__media .social {
+    width: 100%;
+  }
+  #footer #footer__social .social__media .social p {
+    width: 20%;
+    display: inline-block;
+    margin-left: -10%;
+  }
+  #footer #footer__social .social__media .social a {
+    width: 45%;
+    display: inline-block;
   }
 }
 /* RESPONSIVE HEADER-GRID */
