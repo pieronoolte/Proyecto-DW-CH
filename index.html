@@ -26,296 +26,69 @@
 
         <h1>
             <a href="./index.html">ASESORIAS ONLINE</a>
+            <p>Asesorias Universitarias</p>
         </h1>
     
     <!-- Fin de la cabecera -->
-
-    <!-- Inicio de Navegacion -->
-    <nav class="navbar navbar-expand-lg bg-dark w-100" data-bs-theme="dark">
-        <div class="container-fluid">
-            <a id="navitem" class="navbar-brand" href="./index.html">Inicio</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li id="navitem" class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./PAGES/nosotros.html">Nosotros</a>
-                    </li>
-                    <li id="navitem" class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./PAGES/servicios.html">Servicios</a>
-                    </li>
-                    <li id="navitem" class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./PAGES/cursos.html">Cursos</a>
-                    </li>
-                    <li id="navitem" class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./PAGES/contacto.html">Contacto</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- Fin de la navegacion -->
 </header>
     <!-- Inicio contenido  central-->
     <main class="main">
         <!-- Inicio tarjetas -->
-        <div class="main__content">
+        <div class="main__content--index">
+           
             <div class="content__card">
-                <p class="text--icon">H</p>
-                <h2 class="card__category">Investigación de Operaciones</h2>
-                <p class="card__description">
-                    Aprende a programar en Lingo en base a una funcion objetivo
-                </p>
-            </div>
-
-            <div class="content__card">
-                <p class="text--icon">_</p>
-                <h2 class="card__category">Optimización de procesos</h2>
-                <p class="card__description">
-                    Aprende investigació de operaciones a nivel intermedio
-                </p>
-            </div>
-
-            <div class="content__card">
-                <p class="text--icon">S</p>
-                <h2 class="card__category">Matemática Computacional</h2>
-                <p class="card__description">
-                    Conoce los conceptos basicos de Matemática en la computación
-                </p>
-            </div>
-
-            <div class="content__card">
+                <a href="./PAGES/investigacion.html">
                 <p class="text--icon">u</p>
-                <h2 class="card__category">Simulación de Sistemas</h2>
-                <p class="card__description">
-                    Evalua indicadores por medio de modelos de simulación
-                </p>
+                <h2 class="card__category">Cursos</h2>
+                <ul class="card__description">
+                        <li>Investigación de Operaciones</li>
+                        <li>Optimización de procesos</li>
+                        <li>Simulación de Sistemas</li>
+                        <li>Matematica computacional</li>
+                        <li>Evaluación Económica</li>
+                </ul>
+                </a>
             </div>
 
             <div class="content__card">
-                <p class="text--icon">a</p>
-                <h2 class="card__category">Evaluación Económica</h2>
-                <p class="card__description">
-                    Aprende a analizar la viabilidad economica de un proyecto
-                </p>
+                <a href="./PAGES/servicios.html">
+                <p class="text--icon">S</p>
+                <h2 class="card__category">Servicios</h2>
+                <ul class="card__description">
+                        <li>Asesorias</li>
+                        <li>Examenes</li>
+                        <li>Cursos</li>
+                        <li>Resultados</li>
+                </ul>
+                </a>
+            </div>
+
+            <div class="content__card">
+                <a href="./PAGES/nosotros.html">
+                <p class="text--icon">H</p>
+                <h2 class="card__category">Nosotros</h2>
+                <ul class="card__description">
+                        <li>Cursos</li>
+                        <li>Universidades</li>
+                        <li>Novedades</li>
+                        <li>Nuestros Alumnos</li>
+                </ul>
+                </a>
+            </div>
+
+            <div class="content__card">
+                <a href="./PAGES/contacto.html">
+                <p class="text--icon">_</p>
+                <h2 class="card__category">Contacto</h2>
+                <ul class="card__description">
+                        <li>Consultas</li>
+                        <li>Preguntas frecuentes</li>
+                        <li>Inscripción</li>
+                        <li>Contacto</li>
+                </ul>
+                </a>
             </div>
         </div>
         <!-- Fin tarjetas -->
 
-        <!-- Inicio barra lateral -->
-        <aside id="main__lateral">
-            <h3 class="red-text">BUSCAR</h3>
-            <div id="lateral__search">
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn red-border red-text my-2" type="submit">Search</button>
-                </form>
-            </div>
-            <h3 class="red-text">LOGIN</h3>
-            <div id="lateral__login" class="lateral__login--box">
-                <form>
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1"
-                            aria-describedby="emailHelp" placeholder="Enter email">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputPassword1">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1"
-                            placeholder="Password">
-                    </div>
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1"></label>
-                    </div>
-                    <button type="submit" class="btn red text-white">Iniciar</button>
-                </form>
-            </div>
-        </aside>
-        <!-- Fin barra lateral -->
-
-        <!-- Inicio Secciones -->
-        <div class="main__sections">
-            <section class="sections__news">
-                <span class="news__stickers">
-                    <img class="news__sticker1" src="./IMG/scotch.png" alt="Pegatina1">
-                    <img class="news__sticker2" src="./IMG/scotch.png" alt="Pegatina2">
-                </span>
-                <h2 class="news__title">Ultimas Noticias</h2>
-                <article class="news__article">
-                    <span class="text--icon">a</span>
-                    <p>
-                        <a href="#">Proximamente asesorias y examenes en progrmación 1 y 2</a>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti ipsam eveniet ut perferendis!
-                        In laborum iusto accusamus atque adipisci animi repudiandae, voluptatem quod nostrum. Facere
-                        voluptatem unde doloribus molestiae autem.
-                    </p>
-                    <span class="news__date">[03.06.2023. Asesorias online]</span>
-                </article>
-
-                <article class="news__article">
-                    <span class="text--icon">a</span>
-                    <p>
-                        <a href="#">Promociones y beneficios por ser alumno de más de 3 cursos</a>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti ipsam eveniet ut perferendis!
-                        In laborum iusto accusamus atque adipisci animi repudiandae, voluptatem quod nostrum. Facere
-                        voluptatem unde doloribus molestiae autem.
-                    </p>
-                    <span class="news__date">[03.06.2023. Asesorias online]</span>
-                </article>
-
-                <article class="news__article">
-                    <span class="text--icon">a</span>
-                    <p>
-                        <a href="#">Como instalar los software Arena y Promodel</a>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti ipsam eveniet ut perferendis!
-                        In laborum iusto accusamus atque adipisci animi repudiandae, voluptatem quod nostrum. Facere
-                        voluptatem unde doloribus molestiae autem.
-                    </p>
-                   
-                    <span class="news__date">[03.06.2023. Asesorias online]</span>
-                </article>
-            </section>
-
-            <section class="sections__news">
-                <span class="news__stickers">
-                    <img class="news__sticker1" src="./IMG/scotch.png" alt="Pegatina1">
-                    <img class="news__sticker2" src="./IMG/scotch.png" alt="Pegatina2">
-                </span>
-                <h2 class="news__title">Ultimas Noticias</h2>
-                <article class="news__article">
-                    <span class="text--icon">a</span>
-                    <p>
-                        <a href="#">Proximamente asesorias y examenes en progrmación 1 y 2</a>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti ipsam eveniet ut perferendis!
-                        In laborum iusto accusamus atque adipisci animi repudiandae, voluptatem quod nostrum. Facere
-                        voluptatem unde doloribus molestiae autem.
-                    </p>
-                    
-                    <span class="news__date">[03.06.2023. Asesorias online]</span>
-                </article>
-
-                <article class="news__article">
-                    <span class="text--icon">a</span>
-                    <p>
-                        <a href="#">Promociones y beneficios por ser alumno de más de 3 cursos</a>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti ipsam eveniet ut perferendis!
-                        In laborum iusto accusamus atque adipisci animi repudiandae, voluptatem quod nostrum. Facere
-                        voluptatem unde doloribus molestiae autem.
-                    </p>
-                   
-                    <span class="news__date">[03.06.2023. Asesorias online]</span>
-                </article>
-
-                <article class="news__article">
-                    <span class="text--icon">a</span>
-                    <p>
-                        <a href="#">Como instalar los software Arena y Promodel</a>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti ipsam eveniet ut perferendis!
-                        In laborum iusto accusamus atque adipisci animi repudiandae, voluptatem quod nostrum. Facere
-                        voluptatem unde doloribus molestiae autem.
-                    </p>
-                    
-                    <span class="news__date">[03.06.2023. Asesorias online]</span>
-                </article>
-            </section>
-
-            <section class="sections__news">
-                <span class="news__stickers">
-                    <img class="news__sticker1" src="./IMG/scotch.png" alt="Pegatina1">
-                    <img class="news__sticker2" src="./IMG/scotch.png" alt="Pegatina2">
-                </span>
-                <h2 class="news__title">Ultimas Noticias</h2>
-                <article class="news__article">
-                    <span class="text--icon">a</span>
-                    <p>
-                        <a href="#">Proximamente asesorias y examenes en progrmación 1 y 2</a>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti ipsam eveniet ut perferendis!
-                        In laborum iusto accusamus atque adipisci animi repudiandae, voluptatem quod nostrum. Facere
-                        voluptatem unde doloribus molestiae autem.
-                    </p>
-                    
-                    <span class="news__date">[03.06.2023. Asesorias online]</span>
-                </article>
-
-                <article class="news__article">
-                    <span class="text--icon">a</span>
-                    <p>
-                        <a href="#">Promociones y beneficios por ser alumno de más de 3 cursos</a>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti ipsam eveniet ut perferendis!
-                        In laborum iusto accusamus atque adipisci animi repudiandae, voluptatem quod nostrum. Facere
-                        voluptatem unde doloribus molestiae autem.
-                    </p>
-                   
-                    <span class="news__date">[03.06.2023. Asesorias online]</span>
-                </article>
-
-                <article class="news__article">
-                    <span class="text--icon">a</span>
-                    <p>
-                        <a href="#">Como instalar los software Arena y Promodel</a>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti ipsam eveniet ut perferendis!
-                        In laborum iusto accusamus atque adipisci animi repudiandae, voluptatem quod nostrum. Facere
-                        voluptatem unde doloribus molestiae autem.
-                    </p>
-                    
-                    <span class="news__date">[03.06.2023. Asesorias online]</span>
-                </article>
-            </section>
-        </div>
-        <!-- Fin secciones -->
     </main>
-    <!-- Fin contenido central -->
-
-    <!-- Inicio Footer -->
-    <div class="clearfix"></div>
-    <footer class="footer">
-        <div class="footer__content">
-            <div class="footer__menu">
-                <h5>MENÚ</h5>
-                <ul>
-                    <li><a href="#">INICIO</a></li>
-                    <li><a href="#">BLOG</a></li>
-                    <li><a href="#">FORMACION</a></li>
-                    <li><a href="#">CONTACTO</a></li>
-                </ul>
-            </div>
-
-            <div class="footer__location">
-                <h5>UBICACIÓN</h5>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.2102085452716!2d-76.9753744256581!3d-12.097757042850771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c7a4f64c9303%3A0x73c74957c17029b9!2sAv.%20El%20Derby%20254%2C%20Santiago%20de%20Surco%2015023!5e0!3m2!1ses!2spe!4v1686354342185!5m2!1ses!2spe"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-
-            <div class="footer__social">
-                <h5>REDES SOCIALES</h5>
-                <div class="social__instagram">
-                    <p class="text--icon">I</p><a href="#">https/:instagram.com/asesoriasonline</a><br>
-                </div>
-                <div class="social__facebook">
-                    <p class="text--icon">f</p><a href="#">https/:facebook.com/asesoriasonline</a><br>
-                </div>
-                <div class="social__youtube">
-                    <p class="text--icon">y</p><a href="#">https/:youtube.com/asesoriasonline</a><br>
-                </div>
-                <div class="social__copy">
-                    <p><strong>&copy;Desarrolado por Piero Nolte</strong></p><br>
-                    <p>Más contenido en Piero Nolte WEB</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- Fin Footer -->
-
-</body>
-<script type="text/javascript" src="./jquery/code.jquery.com_jquery-3.7.0.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-        crossorigin="anonymous">
-    </script>
-</html>

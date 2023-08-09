@@ -43,6 +43,10 @@ body {
   clear: both;
 }
 
+#container {
+  width: 100%;
+}
+
 /* CABECERA */
 .header {
   width: 100%;
@@ -90,6 +94,9 @@ body {
   font-size: 14px;
   box-shadow: 0px 0px 2px gray;
   margin-top: 20px;
+}
+.nav:hover {
+  background: rgb(114, 21, 21);
 }
 .nav ul {
   list-style: none;
@@ -181,6 +188,9 @@ body {
 .main__content .content__card:last-child {
   margin-right: 0px;
 }
+.main__content .content__card:hover {
+  background: rgb(114, 21, 21);
+}
 .main__content .content__card .text--icon {
   display: block;
   width: 100%;
@@ -189,6 +199,18 @@ body {
   line-height: 110px;
   text-align: center;
   margin: 0px auto;
+}
+.main__content .content__card:hover .text--icon {
+  color: white;
+  animation: showIcon 300ms linear;
+}
+@keyframes showIcon {
+  from {
+    transform: translateY(-200%);
+  }
+  to {
+    transform: translateY(0%);
+  }
 }
 .main__content .content__card .card__category {
   width: 100%;
@@ -199,6 +221,20 @@ body {
   text-align: center;
   color: rgba(7, 6, 6, 0.842);
 }
+.main__content .content__card:hover .card__category {
+  color: white;
+  animation: showCategory 400ms linear;
+}
+@keyframes showCategory {
+  from {
+    transform: translateY(-300%);
+    color: rgba(7, 6, 6, 0.842);
+  }
+  to {
+    transform: translateY(0%);
+    color: white;
+  }
+}
 .main__content .content__card .card__description {
   font-family: "Montserrat", sans-serif;
   text-align: center;
@@ -207,7 +243,117 @@ body {
   margin-top: 5px;
   padding: 3px;
 }
-.main__content .content__card--universidad {
+.main__content .content__card:hover .card__description {
+  color: white;
+  animation: showDescription 400ms linear;
+}
+@keyframes showDescription {
+  from {
+    transform: translateX(-300%);
+    color: rgba(7, 6, 6, 0.842);
+  }
+  to {
+    transform: translateX(0%);
+    color: white;
+  }
+}
+
+.main__content--index {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-left: 7%;
+}
+.main__content--index .content__card {
+  float: left;
+  width: 405px;
+  height: 505px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 2px #ddd;
+  background-color: white;
+  overflow: hidden;
+  margin: 22px;
+  margin-top: 40px;
+  cursor: pointer;
+}
+.main__content--index .content__card a {
+  text-decoration: none;
+}
+.main__content--index .content__card:last-child {
+  margin-right: 0px;
+}
+.main__content--index .content__card:hover {
+  background: rgb(114, 21, 21);
+}
+.main__content--index .content__card .text--icon {
+  display: block;
+  width: 100%;
+  height: 130px;
+  font-size: 50px;
+  line-height: 110px;
+  text-align: center;
+  margin: 0px auto;
+}
+.main__content--index .content__card:hover .text--icon {
+  color: white;
+  animation: showIcon 300ms linear;
+}
+@keyframes showIcon {
+  from {
+    transform: translateY(-200%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+.main__content--index .content__card .card__category {
+  width: 100%;
+  height: 50px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 21px;
+  font-weight: bold;
+  text-align: center;
+  color: rgba(7, 6, 6, 0.842);
+}
+.main__content--index .content__card:hover .card__category {
+  color: white;
+  animation: showCategory 400ms linear;
+}
+@keyframes showCategory {
+  from {
+    transform: translateY(-300%);
+    color: rgba(7, 6, 6, 0.842);
+  }
+  to {
+    transform: translateY(0%);
+    color: white;
+  }
+}
+.main__content--index .content__card .card__description {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  color: rgba(7, 6, 6, 0.842);
+  font-size: 21px;
+  margin-top: 5px;
+  padding: 3px;
+  text-decoration: none;
+}
+.main__content--index .content__card:hover .card__description {
+  color: white;
+  animation: showDescription 400ms linear;
+}
+@keyframes showDescription {
+  from {
+    transform: translateX(-300%);
+    color: rgba(7, 6, 6, 0.842);
+  }
+  to {
+    transform: translateX(0%);
+    color: white;
+  }
+}
+
+.content__card--universidad {
   float: left;
   width: 205px;
   height: 205px;
@@ -219,10 +365,13 @@ body {
   margin-top: 40px;
   cursor: pointer;
 }
-.main__content .content__card--universidad:last-child {
+.content__card--universidad:last-child {
   margin-right: 0px;
 }
-.main__content .content__card--universidad .text--icon {
+.content__card--universidad:hover {
+  background: rgb(114, 21, 21);
+}
+.content__card--universidad .text--icon {
   display: block;
   width: 100%;
   height: 130px;
@@ -231,7 +380,19 @@ body {
   text-align: center;
   margin: 0PX auto;
 }
-.main__content .content__card--universidad .card__category {
+.content__card--universidad:hover .text--icon {
+  color: white;
+  animation: showIcon 300ms linear;
+}
+@keyframes showIcon {
+  from {
+    transform: translateY(-200%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+.content__card--universidad .card__category {
   width: 100%;
   height: 50px;
   font-family: "Montserrat", sans-serif;
@@ -239,6 +400,20 @@ body {
   font-weight: bold;
   text-align: center;
   color: rgba(7, 6, 6, 0.842);
+}
+.content__card--universidad:hover .card__category {
+  color: white;
+  animation: showCategory 400ms linear;
+}
+@keyframes showCategory {
+  from {
+    transform: translateY(-300%);
+    color: rgba(7, 6, 6, 0.842);
+  }
+  to {
+    transform: translateY(0%);
+    color: white;
+  }
 }
 
 /* BARRA LATERAL */
@@ -568,13 +743,12 @@ aside h3:first-child {
 }
 .footer .footer__social p {
   float: left;
-  margin-left: 20px;
   text-align: center;
   font-size: 12px;
 }
 .footer .footer__social a {
   float: left;
-  margin-left: 20px;
+  margin-left: 15px;
   text-align: center;
   font-size: 12px;
 }
@@ -603,6 +777,7 @@ aside h3:first-child {
   display: flex;
   flex-flow: row wrap;
   width: 65%;
+  height: auto;
 }
 
 .section__nota {
@@ -662,6 +837,23 @@ aside h3:first-child {
 #navitem {
   margin-left: 15%;
   font-size: 1.3rem;
+}
+
+#carrusel {
+  width: 80%;
+  margin: 0 auto;
+}
+#carrusel h5 {
+  color: rgb(114, 21, 21);
+  background-color: white;
+  margin: 0;
+}
+#carrusel p {
+  color: rgb(114, 21, 21);
+  background-color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0;
 }
 
 /*PAGES CURSOS*/
@@ -928,6 +1120,9 @@ aside h3:first-child {
   .main__lateral {
     display: none;
   }
+  #main__lateral {
+    display: none;
+  }
   .main__sections {
     width: 90%;
     margin: 0 auto;
@@ -935,8 +1130,14 @@ aside h3:first-child {
   .news__sticker2 {
     margin-left: 95%;
   }
-  #sections {
-    width: 94%;
+  .main__sections {
+    float: right;
+    width: 80%;
+    font-family: sans-serif, Arial, Helvetica;
+    margin-right: 20px;
+  }
+  .main__sections .news__sticker2 {
+    margin-left: 62%;
   }
   #content-grid-2 #main__lateral {
     display: none;
@@ -987,6 +1188,9 @@ aside h3:first-child {
     height: auto;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 0.2fr 0.75fr 0.75fr 0.75fr 0.3fr 0.15fr 0.8fr;
+  }
+  .footer ul {
+    font-size: 17px;
   }
 }
 @media (max-width: 509px) {
@@ -1073,5 +1277,15 @@ aside h3:first-child {
     height: 95%;
   }
 }
-/*RESPONSIVE FOOTER*/
-/*NOTAS*//*# sourceMappingURL=main.css.map */
+/*
+sass
+agregar partial mixin nestin
+
+
+seccion notas bootstrap
+
+agregar contenido
+
+actualizar todos los enlaces a/alt de las imagines
+detalles de estructura html
+*//*# sourceMappingURL=main.css.map */

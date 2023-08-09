@@ -74,6 +74,10 @@ body {
     clear: both;
 }
 
+#container{
+    width: 100%;
+}
+
 /* CABECERA */
 
 .header {
@@ -130,6 +134,10 @@ body {
     font-size: 14px;
     box-shadow: 0px 0px 2px gray;
     margin-top: 20px;
+
+    &:hover{
+        background: $color-primary;
+    }
 
     ul {
         list-style: none;
@@ -235,6 +243,10 @@ body {
             margin-right: 0px;
         }
 
+        &:hover{
+            background: $color-primary;
+        }
+
         .text--icon {
             display: block;
             width: 100%;
@@ -243,6 +255,20 @@ body {
             line-height: 110px;
             text-align: center;
             margin: 0px auto;
+        }
+
+        &:hover .text--icon{
+            color: white;
+            animation: showIcon 300ms linear;
+        }
+
+        @keyframes showIcon {
+            from{   
+                transform: translateY(-200%);
+            }
+            to{
+                transform: translateY(0%)
+            }
         }
 
         .card__category {
@@ -255,6 +281,22 @@ body {
             color: $color-secundary;
         }
 
+        &:hover .card__category{
+            color: white;
+            animation: showCategory 400ms linear; 
+        }
+        
+        @keyframes showCategory {
+            from{   
+                transform: translateY(-300%);
+                color: $color-secundary;
+            }
+            to{
+                transform: translateY(0%);
+                color: white;
+            }
+        }
+
         .card__description {
             font-family: 'Montserrat', sans-serif;
             text-align: center;
@@ -264,8 +306,135 @@ body {
             padding: 3px;
         }
 
-    }
+        &:hover .card__description{
+            color: white;
+            animation: showDescription 400ms linear; 
+        }
+        
+        @keyframes showDescription {
+            from{   
+                transform: translateX(-300%);
+                color: $color-secundary;
+            }
+            to{
+                transform: translateX(0%);
+                color: white;
+            }
+        }
 
+    }
+}
+
+.main__content--index {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-left: 7%;
+
+    .content__card {
+        float: left;
+        width: 405px;
+        height: 505px;
+
+        border: 1px solid #ccc;
+        box-shadow: 1px 1px 2px #ddd;
+        background-color: white;
+        overflow: hidden;
+        margin: 22px;
+        margin-top: 40px;
+        cursor: pointer;
+
+        a{
+            text-decoration: none;
+        }
+
+        &:last-child {
+            margin-right: 0px;
+        }
+
+        &:hover{
+            background: $color-primary;
+        }
+
+        .text--icon {
+            display: block;
+            width: 100%;
+            height: 130px;
+            font-size: 50px;
+            line-height: 110px;
+            text-align: center;
+            margin: 0px auto;
+        }
+
+        &:hover .text--icon{
+            color: white;
+            animation: showIcon 300ms linear;
+        }
+
+        @keyframes showIcon {
+            from{   
+                transform: translateY(-200%);
+            }
+            to{
+                transform: translateY(0%)
+            }
+        }
+
+        .card__category {
+            width: 100%;
+            height: 50px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 21px;
+            font-weight: bold;
+            text-align: center;
+            color: $color-secundary;
+        }
+
+        &:hover .card__category{
+            color: white;
+            animation: showCategory 400ms linear; 
+        }
+        
+        @keyframes showCategory {
+            from{   
+                transform: translateY(-300%);
+                color: $color-secundary;
+            }
+            to{
+                transform: translateY(0%);
+                color: white;
+            }
+        }
+
+        .card__description {
+            font-family: 'Montserrat', sans-serif;
+            text-align: center;
+            color: $color-secundary;
+            font-size: 21px;
+            margin-top: 5px;
+            padding: 3px;
+            text-decoration: none;
+            
+        }
+
+        &:hover .card__description{
+            color: white;
+            animation: showDescription 400ms linear; 
+        }
+        
+        @keyframes showDescription {
+            from{   
+                transform: translateX(-300%);
+                color: $color-secundary;
+            }
+            to{
+                transform: translateX(0%);
+                color: white;
+            }
+        }
+
+    }
+}
     .content__card--universidad {
         float: left;
         width: 205px;
@@ -282,6 +451,10 @@ body {
             margin-right: 0px;
         }
 
+        &:hover{
+            background: $color-primary;
+        }
+
         .text--icon {
             display: block;
             width: 100%;
@@ -290,6 +463,20 @@ body {
             line-height: 110px;
             text-align: center;
             margin: 0PX auto;
+        }
+
+        &:hover .text--icon{
+            color: white;
+            animation: showIcon 300ms linear;
+        }
+
+        @keyframes showIcon {
+            from{   
+                transform: translateY(-200%);
+            }
+            to{
+                transform: translateY(0%)
+            }
         }
 
         .card__category {
@@ -302,9 +489,25 @@ body {
             color: $color-secundary;
         }
 
+        &:hover .card__category{
+            color: white;
+            animation: showCategory 400ms linear; 
+        }
+        
+        @keyframes showCategory {
+            from{   
+                transform: translateY(-300%);
+                color: $color-secundary;
+            }
+            to{
+                transform: translateY(0%);
+                color: white;
+            }
+        }
+
     }
 
-}
+
 
 /* BARRA LATERAL */
 
@@ -684,14 +887,13 @@ aside {
 
         p {
             float: left;
-            margin-left: 20px;
             text-align: center;
             font-size: 12px;
         }
 
         a {
             float: left;
-            margin-left: 20px;
+            margin-left: 15px;
             text-align: center;
             font-size: 12px;
         }
@@ -727,11 +929,13 @@ aside {
     display: flex;
     flex-flow: row wrap;
     width: 65%;
+    height: auto;
 
 }
 
 .section__nota {
     width: 95%;
+
 }
 
 #cards2 {
@@ -742,7 +946,6 @@ aside {
     margin-left: 7%;
 
     #card2 {
-
         width: 100%;
         height: 250px;
     }
@@ -781,6 +984,24 @@ aside {
     font-size: 1.3rem;
 }
 
+#carrusel{
+    width: 80%;
+    margin: 0 auto;
+    h5{
+        color: $color-primary;
+        background-color: white;
+        margin: 0;
+    }
+
+    p{
+        color: $color-primary;
+        background-color: white;
+        font-size: 1rem;
+        font-weight: 500;
+        margin: 0;
+    }
+
+}
 /*PAGES CURSOS*/
 
 #container-grid {
@@ -1109,6 +1330,10 @@ aside {
         display: none;
     }
 
+    #main__lateral {
+        display: none;
+    }
+
     .main__sections {
         width: 90%;
         margin: 0 auto;
@@ -1118,9 +1343,19 @@ aside {
         margin-left: 95%;
     }
 
-    #sections {
-        width: 94%;
+
+    .main__sections {
+        float: right;
+        width: 80%;
+        font-family: sans-serif, Arial, Helvetica;
+        margin-right: 20px;
+
+     .news__sticker2 {
+            margin-left: 62%;
+         }
+    
     }
+
 
     #content-grid-2 {
         #main__lateral {
@@ -1194,6 +1429,12 @@ aside {
         height: auto;
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: 0.2fr 0.75fr 0.75fr 0.75fr 0.3fr 0.15fr 0.8fr;
+    }
+
+    .footer{
+        ul{
+            font-size: 17px;
+        }
     }
 
 }
@@ -1312,39 +1553,16 @@ aside {
 
 }
 
-/*RESPONSIVE FOOTER*/
-// @media(min-width: 509px) and (max-width: 899px) {
-//     #footer__content {
-//         display: flex;
-//         flex-direction: row;
-//         flex-wrap: wrap;
-//         margin-top: 4%;
-//         justify-content: space-around;
-//         font-weight: lighter;
 
-//         .footer__content--box {
-//             min-width: 300px;
-//             margin-top: 20px;
-//             height: 300px;
-//         }
-//     }
+/*
+sass
+agregar partial mixin nestin
 
-// }
 
-/*NOTAS*/
-// #section__notas {
-//     width: 70%;
-//     height: auto;
-//     margin-top: 1%;
-//     display: flex;
-//     flex-direction: row;
-//     flex-wrap: wrap;
-//     margin: 0 auto;
+seccion notas bootstrap
 
-//     span {
-//         text-align: center;
-//         margin-top: 5%;
-//         margin-bottom: 5%;
+agregar contenido
 
-//     }
-// }
+actualizar todos los enlaces a/alt de las imagines
+detalles de estructura html
+*/
