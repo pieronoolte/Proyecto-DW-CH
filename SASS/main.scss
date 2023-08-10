@@ -704,14 +704,15 @@ body {
     .news__title {
         font-size: 24px;
         font-family: 'Montserrat', sans-serif;
-        font-weight: normal;
+        font-weight: bold;
         margin-top: -20px;
         letter-spacing: 1px;
         text-align: center;
-        color: $color-primary;
+        color: $color-secundary;
         padding-top: 20px;
         padding-bottom: 10px;
         border-bottom: 1px solid #ccc;
+      
     }
 
     section {
@@ -749,6 +750,17 @@ body {
         z-index: 0;
         margin-left: 52%;
     }
+
+    .news__article{
+        p{
+            a{
+                display: block;
+                font-size: 22px;
+                color: $color-primary;
+                text-decoration: none;
+            }
+        }
+    }
 }
 
 
@@ -771,6 +783,20 @@ body {
 
     .footer__menu {
         margin-left: 10px;
+        ul{
+            li{
+                
+                a{
+                    text-decoration: none;
+                    cursor: pointer;
+                }
+
+                &:hover{
+                    font-size: 25px;
+                    transition: all 300ms;
+                }
+            }
+        }
     }
 
     a {
@@ -782,7 +808,7 @@ body {
     }
 
     strong {
-        font-size: 20px;
+        font-size: 17px;
     }
 
     h5 {
@@ -834,25 +860,30 @@ body {
         margin: 0px;
 
         p {
-            float: left;
+            display: inline-block;
             text-align: center;
             font-size: 12px;
+            width: 10%;
         }
 
         a {
-            float: left;
+            display: inline-block;
             margin-left: 15px;
             text-align: center;
-            font-size: 12px;
+            font-size: 13px;
+            width: 80%;
         }
 
         .social__instagram {
             margin-top: 50px;
         }
+        
 
-        .copy {
-            margin-top: 50px;
-            margin-left: 20px;
+        .social__copy {
+            margin-top: 40px;
+            p{
+                width: 100%;
+            }
         }
     }
 
@@ -872,7 +903,7 @@ body {
 }
 
 
-/* BOOTSTRAP */
+/* PAGINA SERVICIO */
 .section__notas {
     display: flex;
     flex-flow: row wrap;
@@ -883,6 +914,9 @@ body {
 
 .section__nota {
     width: 95%;
+    span{
+        height: 20px;
+    }
 
 }
 
@@ -892,10 +926,14 @@ body {
     flex-flow: row wrap;
     justify-content: center;
     margin-left: 7%;
+    
+
 
     #card2 {
         width: 100%;
         height: 250px;
+        border: 1px solid $color-secundary;
+        border-radius: 5px;
     }
 }
 
@@ -904,7 +942,11 @@ body {
 }
 
 .red--bg {
-    background: $color-primary;
+    @include colorcard($color-primary)
+}
+
+.black--bg{
+    @include colorcard($color-secundary)
 }
 
 .red {
@@ -1286,6 +1328,12 @@ body {
     }
 }
 
+
+
+
+/*RESPONSIVE*/ 
+
+
 /* RESPONSIVE SECTIONS-GRID*/
 @media(max-width: 469px) {
     #section__card span {
@@ -1563,10 +1611,19 @@ body {
 
 /*
 sass
-agregar partial mixin nestin
+agregar partial mixin extend import
+SASS avanzado
 
 agregar contenido
 
 actualizar todos los enlaces a/alt de las imagines
 detalles de estructura html
+
+contenido paginas cursos
+cambiar color pagina servicio
+mejorar nosotros: novedades y nuestros alumnos
+
+cambiar el footer y estandarizarlo
 */
+
+

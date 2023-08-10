@@ -398,11 +398,11 @@ body {
 .main__sections .news__title {
   font-size: 24px;
   font-family: "Montserrat", sans-serif;
-  font-weight: normal;
+  font-weight: bold;
   margin-top: -20px;
   letter-spacing: 1px;
   text-align: center;
-  color: rgb(114, 21, 21);
+  color: rgba(7, 6, 6, 0.842);
   padding-top: 20px;
   padding-bottom: 10px;
   border-bottom: 1px solid #ccc;
@@ -437,6 +437,12 @@ body {
   z-index: 0;
   margin-left: 52%;
 }
+.main__sections .news__article p a {
+  display: block;
+  font-size: 22px;
+  color: rgb(114, 21, 21);
+  text-decoration: none;
+}
 
 /* FOOTER */
 .footer {
@@ -457,6 +463,14 @@ body {
 .footer .footer__menu {
   margin-left: 10px;
 }
+.footer .footer__menu ul li a {
+  text-decoration: none;
+  cursor: pointer;
+}
+.footer .footer__menu ul li:hover {
+  font-size: 25px;
+  transition: all 300ms;
+}
 .footer a {
   text-decoration: none;
   color: white;
@@ -464,7 +478,7 @@ body {
   transition: all 300ms;
 }
 .footer strong {
-  font-size: 20px;
+  font-size: 17px;
 }
 .footer h5 {
   display: block;
@@ -509,22 +523,26 @@ body {
   margin: 0px;
 }
 .footer .footer__social p {
-  float: left;
+  display: inline-block;
   text-align: center;
   font-size: 12px;
+  width: 10%;
 }
 .footer .footer__social a {
-  float: left;
+  display: inline-block;
   margin-left: 15px;
   text-align: center;
-  font-size: 12px;
+  font-size: 13px;
+  width: 80%;
 }
 .footer .footer__social .social__instagram {
   margin-top: 50px;
 }
-.footer .footer__social .copy {
-  margin-top: 50px;
-  margin-left: 20px;
+.footer .footer__social .social__copy {
+  margin-top: 40px;
+}
+.footer .footer__social .social__copy p {
+  width: 100%;
 }
 
 /* PAGINA CONTACTO */
@@ -539,7 +557,7 @@ body {
   box-shadow: 0 1px 1px rgb(114, 21, 21);
 }
 
-/* BOOTSTRAP */
+/* PAGINA SERVICIO */
 .section__notas {
   display: flex;
   flex-flow: row wrap;
@@ -549,6 +567,9 @@ body {
 
 .section__nota {
   width: 95%;
+}
+.section__nota span {
+  height: 20px;
 }
 
 #cards2 {
@@ -561,6 +582,8 @@ body {
 #cards2 #card2 {
   width: 100%;
   height: 250px;
+  border: 1px solid rgba(7, 6, 6, 0.842);
+  border-radius: 5px;
 }
 
 .red--text {
@@ -569,6 +592,14 @@ body {
 
 .red--bg {
   background: rgb(114, 21, 21);
+  width: auto;
+  height: 30%;
+}
+
+.black--bg {
+  background: rgba(7, 6, 6, 0.842);
+  width: auto;
+  height: 30%;
 }
 
 .red {
@@ -904,6 +935,7 @@ body {
   display: inline-block;
 }
 
+/*RESPONSIVE*/
 /* RESPONSIVE SECTIONS-GRID*/
 @media (max-width: 469px) {
   #section__card span {
@@ -1094,10 +1126,17 @@ body {
 }
 /*
 sass
-agregar partial mixin nestin
+agregar partial mixin extend import
+SASS avanzado
 
 agregar contenido
 
 actualizar todos los enlaces a/alt de las imagines
 detalles de estructura html
+
+contenido paginas cursos
+cambiar color pagina servicio
+mejorar nosotros: novedades y nuestros alumnos
+
+cambiar el footer y estandarizarlo
 *//*# sourceMappingURL=main.css.map */
