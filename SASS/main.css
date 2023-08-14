@@ -1,3 +1,4 @@
+/* BASE SASS CSS */
 /* FUENTES */
 @font-face {
   font-family: "WebSymbolsRegular";
@@ -92,6 +93,7 @@ body {
   height: 30%;
 }
 
+/* COMPONENTES */
 /* CABECERA */
 .header {
   width: 100%;
@@ -340,31 +342,6 @@ body {
   animation: showCategory 400ms linear;
 }
 
-/* INICIO BARRA LATERAL*/
-#main__lateral {
-  width: 32%;
-  min-height: 600px;
-  float: right;
-  margin: 1%;
-  border: 3px solid grey;
-  border-radius: 5px;
-}
-#main__lateral h3 {
-  margin-top: 10%;
-  margin-left: 3%;
-}
-#main__lateral #lateral__login {
-  width: 80%;
-  margin: 0 auto;
-  margin-top: 5%;
-}
-#main__lateral #lateral__search {
-  width: 80%;
-  margin: 0 auto;
-  margin-top: 10%;
-}
-
-/* FIN BARRA LATERAL */
 /* SECCIONES */
 .main__sections {
   float: right;
@@ -425,6 +402,31 @@ body {
   text-align: justify;
 }
 
+/* INICIO BARRA LATERAL*/
+#main__lateral {
+  width: 32%;
+  min-height: 600px;
+  float: right;
+  margin: 1%;
+  border: 3px solid grey;
+  border-radius: 5px;
+}
+#main__lateral h3 {
+  margin-top: 10%;
+  margin-left: 3%;
+}
+#main__lateral #lateral__login {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 5%;
+}
+#main__lateral #lateral__search {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 10%;
+}
+
+/* FIN BARRA LATERAL */
 /* FOOTER */
 .footer {
   width: 100%;
@@ -529,6 +531,7 @@ body {
   width: 100%;
 }
 
+/* PAGINAS */
 /* PAGINA CONTACTO */
 #contacto {
   width: 80%;
