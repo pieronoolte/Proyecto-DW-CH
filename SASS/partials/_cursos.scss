@@ -80,16 +80,6 @@
                 animation: showIcon 300ms linear;
             }
 
-            @keyframes showIcon {
-                from {
-                    transform: translateY(-200%);
-                }
-
-                to {
-                    transform: translateY(0%)
-                }
-            }
-
             .card__category {
                 @include cardcategory(21px);
             }
@@ -99,18 +89,6 @@
                 animation: showCategory 400ms linear;
             }
 
-            @keyframes showCategory {
-                from {
-                    transform: translateY(-300%);
-                    color: $color-secundary;
-                }
-
-                to {
-                    transform: translateY(0%);
-                    color: white;
-                }
-            }
-
             .card__description {
                 @include carddescription(15px);
             }
@@ -118,18 +96,6 @@
             &:hover .card__description {
                 color: white;
                 animation: showDescription 400ms linear;
-            }
-
-            @keyframes showDescription {
-                from {
-                    transform: translateX(-300%);
-                    color: $color-secundary;
-                }
-
-                to {
-                    transform: translateX(0%);
-                    color: white;
-                }
             }
 
         }
@@ -150,7 +116,7 @@
             width: 95%;
             height: 340px;
             margin-top: 1%;
-            @include dflex(space-around,0%,0%,0%,0%);
+            @include dflex(space-around, 0%, 0%, 0%, 0%);
 
             #section__nota {
                 span {

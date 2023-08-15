@@ -426,7 +426,6 @@ body {
   margin-top: 10%;
 }
 
-/* FIN BARRA LATERAL */
 /* FOOTER */
 .footer {
   width: 100%;
@@ -685,14 +684,6 @@ body {
   color: white;
   animation: showIcon 300ms linear;
 }
-@keyframes showIcon {
-  from {
-    transform: translateY(-200%);
-  }
-  to {
-    transform: translateY(0%);
-  }
-}
 #content-grid-2 #content__cards .content__card .card__category {
   width: 100%;
   height: 50px;
@@ -706,16 +697,6 @@ body {
   color: white;
   animation: showCategory 400ms linear;
 }
-@keyframes showCategory {
-  from {
-    transform: translateY(-300%);
-    color: rgba(7, 6, 6, 0.842);
-  }
-  to {
-    transform: translateY(0%);
-    color: white;
-  }
-}
 #content-grid-2 #content__cards .content__card .card__description {
   text-align: center;
   color: rgba(7, 6, 6, 0.842);
@@ -727,16 +708,6 @@ body {
 #content-grid-2 #content__cards .content__card:hover .card__description {
   color: white;
   animation: showDescription 400ms linear;
-}
-@keyframes showDescription {
-  from {
-    transform: translateX(-300%);
-    color: rgba(7, 6, 6, 0.842);
-  }
-  to {
-    transform: translateX(0%);
-    color: white;
-  }
 }
 #content-grid-2 #sections {
   width: 62%;
